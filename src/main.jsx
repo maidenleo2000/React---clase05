@@ -6,8 +6,6 @@ import CicloVida from "./CicloVida.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    {/* <App /> */}
-    <CicloVida />
-    <hr />
+    <App />
   </StrictMode>
 );
