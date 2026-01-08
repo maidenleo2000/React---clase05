@@ -3,10 +3,11 @@ import CicloVida from "./CicloVida";
 import ComposicionPadre from "./ComposicionPadre";
 import ComposiciónHijo from "./ComposiciónHijo";
 import { Contacto, Inicio } from "./HOC";
+import SPA from "./SPA";
 function App() {
   return (
     <>
-      <CicloVida />
+      {/* <CicloVida />
       <hr />
       <ComposicionPadre>
         <h1>Children de Composicion Padre</h1>
@@ -17,7 +18,8 @@ function App() {
       </ComposicionPadre>
       <hr />
       <Inicio />
-      <Contacto />
+      <Contacto /> */}
+      <SPA />
     </>
   );
 }
