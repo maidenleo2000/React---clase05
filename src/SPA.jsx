@@ -5,6 +5,7 @@ import HomeSpa from "./pages/HomeSpa";
 import VistaWrapper from "./VistaWrapper";
 import Nosotros from "./pages/Nosotros";
 import Contacto from "./pages/Contacto";
+import AreaRestringida from "./AreaRestringida";
 //BrowserRouter y HashRouter manejan el ambito de las rutas.
 //BrowserRouter ---> espera un fallback (respuesta) del servidor que debe ser manualmente configurado en el backend
 //HashRouter ---> NO espera respuesta (fallback) del servidor
@@ -12,6 +13,7 @@ import Contacto from "./pages/Contacto";
 const Home = VistaWrapper(HomeSpa);
 const Nos = VistaWrapper(Nosotros);
 const Contact = VistaWrapper(Contacto);
+const Restringido = VistaWrapper(AreaRestringida);
 
 const SPA = () => {
   return (
@@ -25,6 +27,7 @@ const SPA = () => {
           <Route path="/" element={<Home />} />
           <Route path="/nosotros" element={<Nos />} />
           <Route path="/contacto" element={<Contact />} />
+          <Route path="/login" element={<Restringido isLogged={false} />} />
         </Routes>
       </HashRouter>
     </>
